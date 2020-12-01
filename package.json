@@ -1,0 +1,21 @@
+{
+  "name": "rollup-plugin-node-resolve-11-bug-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "npx prettier -w .",
+    "build": "rollup -c"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pkg": "file:pkg"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "11.0.0",
+    "rollup": "2.34.0"
+  }
+}

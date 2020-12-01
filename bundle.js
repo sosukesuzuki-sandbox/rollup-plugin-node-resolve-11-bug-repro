@@ -1,9 +1,12 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', { value: true });
+Object.defineProperty(exports, "__esModule", { value: true });
 
-function hello() {
-  console.log("util.js");
-}
+var util = require("pkg/util");
 
-exports.hello = hello;
+Object.defineProperty(exports, "hello", {
+  enumerable: true,
+  get: function () {
+    return util.hello;
+  },
+});

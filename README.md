@@ -15,24 +15,13 @@ src/index.js → bundle.js...
 (!) Unresolved dependencies
 https://rollupjs.org/guide/en/#warning-treating-module-as-external-dependency
 pkg/util (imported by src/index.js)
-created bundle.js in 16ms
+created bundle.js in 13ms
 ```
 
 **bundle.js:**
 
 ```js
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-
-var util = require("pkg/util");
-
-Object.defineProperty(exports, "hello", {
-  enumerable: true,
-  get: function () {
-    return util.hello;
-  },
-});
+export { hello } from "pkg/util";
 ```
 
 ## Expected
@@ -41,13 +30,9 @@ Object.defineProperty(exports, "hello", {
 
 ```js
 // bundle.js
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-
 function hello() {
   console.log("util.js");
 }
 
-exports.hello = hello;
+export { hello };
 ```

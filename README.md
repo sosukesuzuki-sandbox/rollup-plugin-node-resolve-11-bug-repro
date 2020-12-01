@@ -29,7 +29,6 @@ export { hello } from "pkg/util";
 **bundle.js:**
 
 ```js
-// bundle.js
 function hello() {
   console.log("util.js");
 }
